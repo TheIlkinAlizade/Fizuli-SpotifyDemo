@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=MuseoModerno:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    height: 100vh;
+}
+
+.navbar-left{
+    background-color: black;
+    border-radius: 4%;
+    left: 0;
+    position: fixed;
+    width: 270px;
+    height: 100vh;
+}
+.navbar-left a i{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.username{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+.user-profile{
+    margin-top: 5px;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    background-color: #121212;
+    border: 2px solid black;
+    border-radius: 18px;
+    left: 0;
+    width: 270px;
+}
+.profile-pic{
+    margin: 5px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+}
+.profile-pic:hover{
+    border-color: yellow;
+}
+#icon{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.navbar-left .Links .navbar-link{
+    text-decoration: none;
+    color: white;
+    font-size: 27px;
+    font-family: 'Bebas Neue', sans-serif;
+    display: flex;
+    margin: 10px;
+    width: 210px;
+    padding-left: 10px;
+}
+.navbar-left .Links .navbar-link:hover{
+    background-color: #1f1f1f;
+}
+
+#logoutBtn{
+    width: 130px;
+    height: 60px;
+    font-size: 25px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    margin: 10px;
+    position: absolute;
+    bottom: 0;
+}
+#logoutBtn:hover{
+    cursor: pointer;
+    color: darkred;
+}
+
+.Library{
+    margin-top: 5px;
+    background-color: #121212;
+    border: 2px solid black;
+    border-radius: 18px;
+    left: 0;
+    width: 270px;
+    height: 100%;
+}
+.LikedSongs{
+    display: grid;
+    overflow: auto;
+    overflow-y: scroll;
+    width: 270px;
+    height: 26vh;
+}
+@media all and (display-mode: fullscreen) {
+    .LikedSongs {
+        height: 40vh;
+    }
+}
+.liked-item{
+    width: 250px;
+    height: 64px;
+    border: 2px solid transparent;
+    margin-left: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    display: flex;
+    position: relative;
+}
+.liked-item:hover{
+    background-color: #232323;
+    border: 2px solid #232323;
+}
+.liked-item .item-pic{
+    width: 50px;
+    height: 50px;
+    margin-left: 7px;
+    margin-top: 4px;
+    margin-right: 7px;
+}
+.liked-item h1{
+    color: #1ed760;
+    margin-top: 5px;
+    font-size: 20px;
+    font-family: Bahnschrift;
+}
+.liked-item h1 span{
+    font-size: 15px;
+    color: #7f7f7f;
+}
+.liked-item i{
+    color: #1ed760;
+    font-size: 23px;
+    horiz-align: center;
+    margin-left: 5px;
+}
+
+/*<---Content--->*/
+
+.content{
+    margin-left: 280px;
+    background: linear-gradient(to bottom,#184355 1px, #121212 500px);
+    border-radius: 18px;
+    color: white;
+}
+
+.Musics{
+    width: 100%;
+    height: 55vh;
+    padding: 0;
+}
+
+.Musics h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    font-size: 45px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.Musics .feautured_music_box{
+    width: 95%;
+    height: 50vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+.Musics .feautured_music_box .featured_music_card{
+    width: 200px;
+    height: 300px;
+    text-align: center;
+    padding: 5px;
+    border: 2px solid transparent;
+    margin: auto 20px;
+    border-radius: 5%;
+    background-color: #181818;
+    box-shadow: 0 0 5px #171717;
+}
+.Musics .feautured_music_box .featured_music_card:hover{
+    transition: 0.4s;
+    box-shadow: 0 0 5px transparent;
+    scale: 1.05;
+    background-color: #242424;
+}
+
+.Musics .feautured_music_box .featured_music_card .featured_music_img img{
+    margin-top: 5px;
+    width: 180px;
+    height: 190px;
+    box-shadow: 0 0 5px #171717;
+}
+
+.Musics .feautured_music_box .featured_music_card .featured_music_tag{
+    position: relative;
+}
+
+.Musics .feautured_music_box .featured_music_card .featured_music_tag h2{
+    margin: 5px;
+    color: white;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.Musics .feautured_music_box .featured_music_card .featured_music_tag .singer{
+    color: #919191;
+}
+
+.Musics .feautured_music_box .featured_music_card .featured_music_tag .categories{
+    color: #089da1;
+    margin-top: 2px;
+}
+
+.Musics .feautured_music_box .featured_music_card .featured_music_tag .music_price{
+    margin-top: 2px;
+    font-weight: bold;
+    margin-bottom: 2px;
+    color: #919191;
+}
+
+.Musics .feautured_music_box .featured_music_card .featured_music_tag .f_btn{
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 50%;
+    color: yellow;
+    background-color: transparent;
+    font-size: 50px;
+    position: absolute;
+    right: 0;
+    transform: translateY(-80%) translateX(20%);
+}
+
+.Musics .feautured_music_box .featured_music_card .featured_music_tag .f_btn:hover{
+    color: #ddff00;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-thumb{
+    background: #08e5ea;
+    border-radius: 10px;
+}
+
+.Musics .feautured_album_box{
+    width: 95%;
+    height: 50vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+
+.Musics .feautured_album_box .feautured_album_card{
+    width: 200px;
+    height: 280px;
+    padding: 5px;
+    border: 2px solid transparent;
+    margin: auto 20px;
+    border-radius: 5%;
+    background-color: #181818;
+    text-align: center;
+}
+.Musics .feautured_album_box .feautured_album_card:hover{
+    transition: 0.4s;
+    box-shadow: 0 0 5px transparent;
+    scale: 1.05;
+    background-color: #242424;
+}
+.Musics .feautured_album_box .feautured_album_card .featured_music_img img{
+    margin-top: 8px;
+    width: 180px;
+    height: 180px;
+}
+
+.Musics .feautured_album_box .feautured_album_card .featured_album_tag h2{
+    margin: 8px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: white;
+    text-align: left;
+}
+
+.Musics .feautured_album_box .feautured_album_card .featured_album_tag{
+    position: relative;
+}
+
+.Musics .feautured_album_box .feautured_album_card .featured_album_tag .f_btn{
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 50%;
+    color: yellow;
+    background-color: transparent;
+    font-size: 50px;
+    position: absolute;
+    right: 0;
+    transform: translateY(-80%) translateX(20%);
+}
+
+Musics .feautured_album_box .feautured_album_card .featured_album_tag .f_btn:hover{
+    color: #ddff00;
+}
